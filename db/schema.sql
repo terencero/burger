@@ -1,0 +1,9 @@
+CREATE DATABASE burgers_db;
+USE DATABASE burgers_db;
+CREATE TABLE burgers (
+id NOT NULL AUTO_INCREMENT,
+burger_name VARCHAR(250) NOT NULL,
+devoured BOOLEAN,
+date TIMESTAMP,
+PRIMARY KEY(id)
+);
