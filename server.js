@@ -8,11 +8,15 @@ var exphbs = require('express-handlebars');
 
 var PORT  = process.env.PORT || 8080;
 var app = express();
+app.set('port', (process.env.PORT || 8080));
 
 // Serve/route to static content
 app.use(express.static(process.cwd() + '/public'));
 
-app.use(bodyParser.urlencoded({ extended: false}));
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded( {extended: true }));
+app.use(bodyParser.text());
+app.use(bodyParser.json({ type: 'application/vnd.api+json' }));
 // Override with POST having ?_method=DELETE
 app.use(methodOverride('_method'));
 
