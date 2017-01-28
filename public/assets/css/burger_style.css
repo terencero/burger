@@ -1,0 +1,48 @@
+* {
+	margin: 0;
+}
+
+html, body {
+	height: 100%;
+	font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+	font-size: 1em;
+	background-image: url("../img/food.png");
+}
+
+div.wrapper {
+	margin: 0 auto 0 auto;
+	position: relative;
+	display: block;
+	width: 80%;
+	
+}
+
+div.undevoured {
+	float: left;
+	display: inline-block;
+	position: relative;
+	height: 100%;
+}
+
+div.devoured {
+	float: right;
+	display: inline-block;
+	position: relative;
+	height: 100%;
+}
+
+div.heading {
+	top: 0px;
+	position: relative;
+	margin: 0 auto 0 auto;
+	display: block;
+	text-align: center;
+}
+
+div.add {
+	margin: 0 auto;
+	position: relative;
+	display: block;
+	text-align: center;
+	clear: both;
+}
