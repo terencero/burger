@@ -6,7 +6,7 @@ var methodOverride = require('method-override');
 // Set handlebars
 var exphbs = require('express-handlebars');
 
-var port  = 3000;
+var port  = process.env.PORT || 8080;
 var app = express();
 
 // Serve/route to static content
