@@ -6,7 +6,7 @@ var methodOverride = require('method-override');
 // Set handlebars
 var exphbs = require('express-handlebars');
 
-var port  = process.env.PORT || 8080;
+var PORT  = process.env.PORT || 8080;
 var app = express();
 
 // Serve/route to static content
@@ -24,5 +24,5 @@ var routes = require('./controllers/burger_controller.js');
 
 app.use('/', routes);
 
-app.listen(port);
+app.listen(PORT);
 
