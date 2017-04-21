@@ -37,7 +37,7 @@ var orm = {
 
 		queryString += ' (';
 		queryString += cols.toString();
-		queryString += ')';
+		queryString += ') ';
 		queryString += 'VALUES (';
 		queryString += questionMarks(vals.length);
 		queryString += ')';
